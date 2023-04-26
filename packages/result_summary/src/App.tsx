@@ -1,9 +1,39 @@
 import React from 'react';
+import { Button } from 'Components/Button';
+import { Result } from 'Components/Result';
+import { LeftPanel } from 'Components/LeftPanel';
+import { Camera } from 'lucide-react';
 
 function App() {
+  const results = [
+    { result: 'Reaction', score: 80, color: '#fff5f6', icon: Camera, iconColor: 'red' },
+    { result: 'Memory', score: 92, color: '#fefbf2', icon: Camera, iconColor: 'orange'},
+    { result: 'Verbal', score: 61, color: '#f2fbfa', icon: Camera, iconColor: 'green' },
+    { result: 'Visual', score: 72, color: '#f3f3fd', icon: Camera, iconColor: 'purple' },
+  ];
+
   return (
-    <div className="text-3xl font-bold underline">
-      Hello
+    <div className="flex flex-col h-screen">
+      <div className=''>
+        <LeftPanel />
+      </div>
+
+      <div className='mt-8 px-9'>
+        <span className='text-2xl font-bold'>Summary</span>
+        <div className='my-8 overflow-scroll'>
+          {results.map(result => 
+          <Result 
+            key={result.score}
+            result={result.result} 
+            score={result.score} 
+            color={result.color}
+            Icon={result.icon}
+          />)}
+
+          <Button>Continue</Button>
+        </div>
+      </div>
+      <div></div>
     </div>
   );
 }
