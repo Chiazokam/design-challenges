@@ -9,13 +9,16 @@
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
+    "baseUrl": "src",
     "lib": [
       "es6"
     ]
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
   ]
  }
- 
