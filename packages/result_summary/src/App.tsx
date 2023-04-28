@@ -2,14 +2,14 @@ import React from 'react';
 import { Button } from 'Components/Button';
 import { Result } from 'Components/Result';
 import { LeftPanel } from 'Components/LeftPanel';
-import { Camera } from 'lucide-react';
+import { Zap, Brain, MessageCircle, Eye } from 'lucide-react';
 
 function App() {
   const results = [
-    { result: 'Reaction', score: 80, color: '#fff5f6', icon: Camera, iconColor: 'red' },
-    { result: 'Memory', score: 92, color: '#fefbf2', icon: Camera, iconColor: 'orange'},
-    { result: 'Verbal', score: 61, color: '#f2fbfa', icon: Camera, iconColor: 'green' },
-    { result: 'Visual', score: 72, color: '#f3f3fd', icon: Camera, iconColor: 'purple' },
+    { result: 'Reaction', score: 80, color: '#fff5f6', icon: Zap, iconColor: 'red' },
+    { result: 'Memory', score: 92, color: '#fefbf2', icon: Brain, iconColor: 'orange'},
+    { result: 'Verbal', score: 61, color: '#f2fbfa', icon: MessageCircle, iconColor: 'green' },
+    { result: 'Visual', score: 72, color: '#f3f3fd', icon: Eye, iconColor: 'purple' },
   ];
 
   return (

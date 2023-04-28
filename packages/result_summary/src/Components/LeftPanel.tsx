@@ -2,7 +2,7 @@ import React from 'react';
 
 export const LeftPanel = () => {
   return (
-    <div className='bg-gradient-to-t from-[#4433F0] via-[#4B36f3] to-[#6540FC] p-8 rounded-b-3xl flex flex-col items-center'>
+    <div className='bg-gradient-to-t from-[#4433F0] via-[#4B36f3] to-[#6540FC] p-8 rounded-b-[40px] flex flex-col items-center'>
       <span className='text-2xl font-semibold text-gray-300'>Your Result</span>
 
       <div className='border w-48 h-48 rounded-full border-[#4A24CF] my-8 p-4 bg-[#4A24CF] flex flex-col items-center justify-center'>
