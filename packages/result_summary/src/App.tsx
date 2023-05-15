@@ -13,27 +13,28 @@ function App() {
   ];
 
   return (
-    <div className="flex flex-col h-screen">
-      <div className=''>
-        <LeftPanel />
-      </div>
+    <div className='flex flex-col md:justify-center h-screen md:items-center'>
+      <div className="flex flex-col md:flex-row h-auto w-auto md:shadow-2xl md:rounded-[40px] md:shadow-blue-500/50 md:mx-16">
+        <div className='md:w-1/2'>
+          <LeftPanel />
+        </div>
 
-      <div className='mt-8 px-9'>
-        <span className='text-2xl font-bold'>Summary</span>
-        <div className='my-8 overflow-scroll'>
-          {results.map(result => 
-          <Result 
-            key={result.score}
-            result={result.result} 
-            score={result.score} 
-            color={result.color}
-            Icon={result.icon}
-          />)}
+        <div className='mt-8 px-9 py-4 flex flex-col justify-center md:w-1/2'>
+          <span className='text-2xl font-bold'>Summary</span>
+          <div className='my-8 overflow-scroll'>
+            {results.map(result => 
+            <Result 
+              key={result.score}
+              result={result.result} 
+              score={result.score} 
+              color={result.color}
+              Icon={result.icon}
+            />)}
 
-          <Button>Continue</Button>
+            <Button>Continue</Button>
+          </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }
