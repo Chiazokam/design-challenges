@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='flex flex-col md:justify-center h-screen md:items-center'>
-      <div className="flex flex-col md:flex-row h-auto w-auto md:shadow-2xl md:rounded-[40px] md:shadow-blue-500/50 md:mx-16">
+      <div className="flex flex-col md:flex-row h-auto md:w-[50rem] md:shadow-2xl md:rounded-[40px] md:shadow-blue-500/50 md:mx-16">
         <div className='md:w-1/2'>
           <LeftPanel />
         </div>
