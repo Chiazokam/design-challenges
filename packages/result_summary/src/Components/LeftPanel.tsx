@@ -11,7 +11,7 @@ export const LeftPanel = () => {
       </div>
 
       <span className='text-3xl font-semibold text-white'>Great</span>
-      <span className='text-xl font-semibold text-gray-300 text-center mt-4 max-w-80 md:max-w-60'>You scored higher than 65% of the people who have taken these tests</span>
+      <span className='text-xl font-semibold text-gray-300 text-center mt-4 max-w-80 md:w-72'>You scored higher than 65% of the people who have taken these tests</span>
     </div>
   )
 }
